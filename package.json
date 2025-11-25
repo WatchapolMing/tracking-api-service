@@ -1,0 +1,23 @@
+{
+  "name": "tracking-api-heroku",
+  "version": "1.0.0",
+  "description": "RESTful API to track packages using an external service.",
+  "main": "server.js", 
+  "type": "module", 
+  "scripts": {
+    "start": "node server.js",  
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "api",
+    "render"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"     
+  }
+}

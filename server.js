@@ -28,12 +28,12 @@ app.get('/api/tracking/:trackingId', async (req, res) => {
     const trackingId = req.params.trackingId;
     
     // 1. ตรวจสอบว่า Tracking ID อยู่ในชุดข้อมูลที่เราเตรียมไว้หรือไม่
-    if (!trackingData.includes(trackingId)) {
+    /*if (!trackingData.includes(trackingId)) {
         return res.status(404).json({ 
             error: true, 
             message: `Tracking ID ${trackingId} not found in our dataset.` 
         });
-    }
+    }*/
 
     // 2. ดึงข้อมูลจาก API ภายนอก
     const externalApiUrl = `https://www.inzaithai.com/api/tracking/${trackingId}`;
